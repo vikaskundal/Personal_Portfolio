@@ -77,7 +77,7 @@ export default function Hero() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-gray-900 dark:from-white via-blue-900 dark:via-blue-300 to-purple-900 dark:to-purple-300 bg-clip-text text-transparent"
           >
-            Hey, I'm{' '}
+            Hey, I&apos;m{' '}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Vikas Kundal
             </span>
@@ -115,7 +115,7 @@ export default function Hero() {
               whileTap={{ scale: 0.95 }}
             >
               <Code size={20} />
-              Let's Work Together
+              Let&apos;s Work Together
             </motion.button>
 
             <motion.a

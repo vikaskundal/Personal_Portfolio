@@ -44,12 +44,12 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            I'm actively looking for internships or junior developer roles in Sydney. 
-            Open to full-time, part-time, or hybrid positions. Let's connect!
+            I&apos;m actively looking for internships or junior developer roles in Sydney. 
+            Open to full-time, part-time, or hybrid positions. Let&apos;s connect!
           </p>
         </motion.div>
 
@@ -65,8 +65,8 @@ export default function Contact() {
             <div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">Get in Touch</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                Whether you're hiring, have advice, or want to collaborate on cool projects with 
-                MERN/Next.js, I'd love to hear from you!
+                Whether you&apos;re hiring, have advice, or want to collaborate on cool projects with 
+                MERN/Next.js, I&apos;d love to hear from you!
               </p>
             </div>
 
@@ -194,7 +194,7 @@ export default function Contact() {
                     className="flex items-center gap-2 p-4 bg-green-50 border border-green-200 rounded-lg text-green-700"
                   >
                     <CheckCircle size={20} />
-                    <span className="font-semibold">Message sent successfully! I'll get back to you soon.</span>
+                    <span className="font-semibold">Message sent successfully! I&apos;ll get back to you soon.</span>
                   </motion.div>
                 )}
 

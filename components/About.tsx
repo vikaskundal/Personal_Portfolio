@@ -44,22 +44,22 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Hey! I'm <strong>Vikas Kundal</strong>, a final-year Bachelor of IT (Software Development) 
-              student at Federation University, graduating in December 2025. I'm based in Sydney, NSW, 
-              and I'm passionate about full-stack development, especially with the{' '}
+              Hey! I&apos;m <strong>Vikas Kundal</strong>, a final-year Bachelor of IT (Software Development) 
+              student at Federation University, graduating in December 2025. I&apos;m based in Sydney, NSW, 
+              and I&apos;m passionate about full-stack development, especially with the{' '}
               <span className="text-blue-600 dark:text-blue-400 font-semibold">MERN stack</span> (MongoDB, Express, React, Node.js).
             </p>
             
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I've been working with JavaScript for several years and recently started diving into{' '}
+              I&apos;ve been working with JavaScript for several years and recently started diving into{' '}
               <span className="text-purple-600 dark:text-purple-400 font-semibold">TypeScript</span> and{' '}
               <span className="text-purple-600 dark:text-purple-400 font-semibold">Next.js</span> to sharpen my skills further. 
               I enjoy building user-friendly, real-world applications that solve actual problems.
             </p>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Currently, I'm improving my mobile ecommerce project and learning how to build scalable 
-              SaaS products. I'm actively looking for{' '}
+              Currently, I&apos;m improving my mobile ecommerce project and learning how to build scalable 
+              SaaS products. I&apos;m actively looking for{' '}
               <span className="text-blue-600 dark:text-blue-400 font-semibold">internships or junior developer roles</span> in 
               Sydney — open to full-time, part-time, or hybrid positions.
             </p>

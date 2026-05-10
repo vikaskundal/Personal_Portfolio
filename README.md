@@ -8,7 +8,7 @@ A beautiful, modern portfolio website built with Next.js, TypeScript, and Tailwi
 - 📱 **Fully Responsive** - Works perfectly on all devices
 - ⚡ **Fast Performance** - Optimized with Next.js 14 App Router
 - 🎭 **Smooth Animations** - Powered by Framer Motion
-- 🗄️ **MongoDB Integration** - Database support for projects management
+- 🌓 **Dark mode** - Theme toggle with persisted preference
 - 🎯 **SEO Optimized** - Built with SEO best practices
 
 ## Tech Stack
@@ -18,40 +18,33 @@ A beautiful, modern portfolio website built with Next.js, TypeScript, and Tailwi
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
-- **Database**: MongoDB
 
 ## Getting Started
 
 ### Prerequisites
 
 - Node.js 18+ installed
-- MongoDB Atlas account (or local MongoDB instance)
 
 ### Installation
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
 
-2. Create a `.env.local` file in the root directory:
-```env
-MONGODB_URI=your_mongodb_connection_string
-```
+2. Run the development server:
 
-3. Run the development server:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Project Structure
 
 ```
 ├── app/
-│   ├── api/
-│   │   └── projects/     # API routes for projects CRUD
 │   ├── globals.css       # Global styles
 │   ├── layout.tsx        # Root layout
 │   └── page.tsx          # Home page
@@ -60,38 +53,28 @@ npm run dev
 │   ├── Hero.tsx          # Hero section
 │   ├── About.tsx         # About section
 │   ├── Skills.tsx        # Skills section
-│   ├── Projects.tsx      # Projects showcase
+│   ├── Projects.tsx      # Projects showcase (data lives here)
 │   ├── Services.tsx      # Services section
 │   ├── Contact.tsx       # Contact form
 │   └── Footer.tsx        # Footer
 └── lib/
-    ├── mongodb.ts        # MongoDB connection
     └── models/
-        └── Project.ts    # Project model/types
+        └── Project.ts    # Project TypeScript type
 ```
 
 ## Customization
 
-### Update Personal Information
+### Update personal information
 
-Edit the following components to update your information:
+Edit the following components:
+
 - `components/Hero.tsx` - Hero section content
 - `components/About.tsx` - About section
 - `components/Contact.tsx` - Contact information
 
-### Add Projects
+### Add or edit projects
 
-Projects can be added in two ways:
-
-1. **Via Default Projects** - Edit `components/Projects.tsx` to update the `defaultProjects` array
-2. **Via API** - Use the `/api/projects` endpoint to add projects dynamically
-
-### MongoDB Setup
-
-1. Create a MongoDB Atlas account (free tier available)
-2. Create a cluster and get your connection string
-3. Add the connection string to `.env.local` as `MONGODB_URI`
-4. The database will be created automatically when you first add a project
+Edit the `projects` array at the top of `components/Projects.tsx`.
 
 ## Deployment
 
@@ -99,16 +82,11 @@ Projects can be added in two ways:
 
 1. Push your code to GitHub
 2. Import your repository in Vercel
-3. Add your `MONGODB_URI` environment variable in Vercel settings
-4. Deploy!
+3. Deploy (no database env vars required)
 
-### Other Platforms
+### Other platforms
 
-This Next.js app can be deployed to any platform that supports Next.js:
-- Netlify
-- Railway
-- AWS Amplify
-- DigitalOcean App Platform
+This Next.js app can be deployed to any platform that supports Next.js: Netlify, Railway, AWS Amplify, DigitalOcean App Platform, etc.
 
 ## License
 

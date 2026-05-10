@@ -1,34 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
 import { ExternalLink, Github, Code2, Smartphone, CheckCircle, Wrench, Cloud, CheckSquare, ShoppingCart } from 'lucide-react';
 import { Project } from '@/lib/models/Project';
 
-export default function Projects() {
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetchProjects();
-  }, []);
-
-  const fetchProjects = async () => {
-    try {
-      const response = await fetch('/api/projects');
-      const data = await response.json();
-      if (data.success) {
-        setProjects(data.data);
-      }
-    } catch (error) {
-      console.error('Error fetching projects:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  // Default projects if database is empty
-  const defaultProjects: Project[] = [
+const projects: Project[] = [
     {
       title: 'Direct Import Outlet (DIO)',
       description: 'Marketing site for a Seven Hills repair shop—phone & laptop repairs, services, reviews, and contact.',
@@ -61,17 +37,18 @@ export default function Projects() {
     },
     {
       title: 'Mobile Repair Shop Management System',
-description: 'A full-stack repair ticket management platform designed for mobile phone repair businesses.',
-longDescription: 'A full-stack repair management platform that allows repair shops to create repair tickets, track device diagnostics, manage parts and repair costs, record device pre-condition checks, and maintain warranty records. The system is built using Next.js (App Router), Prisma ORM, PostgreSQL (Neon), and Tailwind CSS, and deployed on Vercel with a server-rendered architecture for high performance.',
-image: '/api/placeholder/600/400',
-technologies: ['Next.js', 'Tailwind CSS', 'Prisma', 'PostgreSQL', 'Neon', 'Vercel'],
-liveUrl: 'https://fixtrack-mu.vercel.app',
-category: 'fullstack',
-featured: true,
+      description: 'A full-stack repair ticket management platform designed for mobile phone repair businesses.',
+      longDescription: 'A full-stack repair management platform that allows repair shops to create repair tickets, track device diagnostics, manage parts and repair costs, record device pre-condition checks, and maintain warranty records. The system is built using Next.js (App Router), Prisma ORM, PostgreSQL (Neon), and Tailwind CSS, and deployed on Vercel with a server-rendered architecture for high performance.',
+      image: '/api/placeholder/600/400',
+      technologies: ['Next.js', 'Tailwind CSS', 'Prisma', 'PostgreSQL', 'Neon', 'Vercel'],
+      liveUrl: 'https://fixtrack-mu.vercel.app',
+      category: 'fullstack',
+      featured: true,
     },
   ];
 
-  const displayProjects = projects.length > 0 ? projects : defaultProjects;
+export default function Projects() {
+  const displayProjects = projects;
   const featuredProjects = displayProjects.filter((p) => p.featured);
   const otherProjects = displayProjects.filter((p) => !p.featured);
 
@@ -238,16 +215,6 @@ featured: true,
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0 },
   };
-
-  if (loading) {
-    return (
-      <section id="projects" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="text-gray-600 dark:text-gray-400">Loading projects...</div>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section id="projects" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
