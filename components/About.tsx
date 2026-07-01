@@ -45,7 +45,7 @@ export default function About() {
           >
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               Hey! I&apos;m <strong>Vikas Kundal</strong>, a final-year Bachelor of IT (Software Development) 
-              student at Federation University, graduating in December 2025. I&apos;m based in Sydney, NSW, 
+              student at Federation University, graduating in August 2026. I&apos;m based in Sydney, NSW, 
               and I&apos;m passionate about full-stack development, especially with the{' '}
               <span className="text-blue-600 dark:text-blue-400 font-semibold">MERN stack</span> (MongoDB, Express, React, Node.js).
             </p>
@@ -97,7 +97,7 @@ export default function About() {
               >
                 <Calendar className="text-pink-600 mb-2" size={24} />
                 <h3 className="font-semibold text-gray-900 dark:text-gray-100">Graduation</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">December 2025</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">August 2026</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">Final Year</p>
               </motion.div>
 
